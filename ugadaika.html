@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<script> // Угадай число
+	var answer = parseInt(Math.random() * 10); 
+	var count = 1;
+	
+	while(true) {
+		var userAnswer = prompt("Введите число от 0 до 10, для выхода нажмите q.");
+		if(userAnswer == "q"){
+			break;
+		}
+		userAnswer = parseInt(userAnswer);
+		
+
+		if(userAnswer > answer)	{
+			alert("Ваш ответ слишком большой");
+			count ++;
+		} else if(userAnswer < answer) {
+			alert("Ваш ответ слишком маленький.");
+			count ++;
+		} else if(userAnswer == answer) {
+			alert("Вы угадали с " + count + " попыток.");
+			break;
+		} else {
+			alert("Необходимо ввести число.");
+		}
+	} 
+
+
+	
+</script>

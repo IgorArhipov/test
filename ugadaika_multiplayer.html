@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+<script> // Угадай число
+	var answer = parseInt(Math.random() * 10); 
+	var count_1 = 1;
+	var count_2 = 1
+	while(true) {
+		var userAnswer_1 = prompt("Первый игрок, введите число от 0 до 10, для выхода нажмите q.");
+		var userAnswer_2 = prompt("Второй игрок, введите число от 0 до 10, для выхода нажмите q.");
+		if(userAnswer_1 == "q") {
+			break;
+		}
+		if(userAnswer_2 == "q") {
+			break;
+		}
+		
+		userAnswer_1 = parseInt(userAnswer_1);
+		userAnswer_2 = parseInt(userAnswer_2);
+		
+
+		if(userAnswer_1 > answer)	{
+			alert("Первый игрок, Ваш ответ слишком большой");
+			count_1 ++;
+		} else if(userAnswer_1 < answer) {
+			alert("Первый игрок, Ваш ответ слишком маленький.");
+			count_1 ++;
+		} else if(userAnswer_1 == answer) {
+			alert("Первый игрок, Вы угадали с " + count_1 + " попыток.");
+			
+		} else {
+			alert("Необходимо ввести число.");
+		} 
+		if(userAnswer_2 > answer)	{
+			alert("Второй игрок, Ваш ответ слишком большой");
+			count_2 ++;
+		} else if(userAnswer_2 < answer) {
+			alert("Второй игрок, Ваш ответ слишком маленький.");
+			count_2 ++;
+		} else if(userAnswer_2 == answer) {
+			alert("Второй игрок, Вы угадали с " + count_2 + " попыток.");
+			break;
+		} else {
+			alert("Необходимо ввести число.");
+		}
+	} 
+
+
+</script>

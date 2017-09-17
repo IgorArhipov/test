@@ -1,0 +1,12 @@
+<meta charset="utf-8">
+<script>
+	var vklad = parseInt(prompt("Введите сумму вклада: "));
+	var uvelichenie = 1 + parseInt(prompt("Введите процент: ")) / 100;
+	var time = ["год", "два года", "три года", "четыре года", "пять лет"];
+
+	for (var i = 0; i < 5; i++) {
+		vklad = parseInt(vklad * uvelichenie);
+		alert("Через " + time[i] + " вклад будет " + vklad)
+	}  
+	
+</script>

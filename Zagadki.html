@@ -1,0 +1,33 @@
+﻿<meta charset="utf-8">
+<script>
+var count = 0;
+var answer;
+alert("Отгадайте три загадки.");
+  answer = prompt("Кто входит в окно, не раскрывая его?").toLowerCase();
+  if ( answer == "свет"){
+	alert("Правильно")
+	count++;
+	} 
+	else{
+	alert("Неправильно")	
+	}
+  answer = prompt("Белый, а не сахар, нет ног, а идет.").toLowerCase();
+	if (answer == "снег"){
+		alert("Правильно")
+		count++;
+	}
+	else{
+		alert("Неправильно")
+	}
+ answer = prompt("Какая птица носит название фрукта?").toLowerCase();
+  if (answer ==  "киви") {
+		alert("Правильно")
+	    count++;
+	}
+	else{
+		alert("Непраильно")
+	}
+	
+  alert("Вы отгадали "+ count+ " загадок!");	
+
+</script>
